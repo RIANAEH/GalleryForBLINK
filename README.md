@@ -1,6 +1,8 @@
 # GalleryForBLINK
 블링크를 위한 블랙핑크 사진 갤러리
 
+<img src="home.png">
+
 <h2>Environment</h2>
 <h3>Front-End</h3>
 <ul>
