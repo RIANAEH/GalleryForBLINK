@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/basic.css') }}">
+    <title>Gallery for BLINK</title>
+  </head>
+
+  <body style="background-color: pink;">
+    <center><h1>Gallery for BLINK</h1></center>
+    <hr width="100%" color="black"/>
+
+    <center>
+    <form>
+    <img src="{{ url_for('static',filename='images/upload2.png') }}", width="50"
+        style="margin-left: auto; margin-right: auto; display: block;")/>
+    <a href="./upload">파일 업로드</a><br><br><br>
+
+    <img src="{{ url_for('static',filename='images/list2.png') }}", width="50"
+        style="margin-left: auto; margin-right: auto; display: block;")/>
+    <a href="./list">파일 목록</a><br><br><br>
+
+    <img src="{{ url_for('static',filename='images/download2.png') }}", width="50"
+        style="margin-left: auto; margin-right: auto; display: block;")/>
+    <a href="./download">파일 다운로드</a><br><br><br>
+    </form>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/basic.css') }}">
+    <title>Gallery for BLINK</title>
+  </head>
+
+  <body>
+    <center><h1>List Page</h1></center>
+    <center><a href="/">홈페이지</a><br><center>
+    <hr width="100%" color="black"/>
+    <center><h3>List of Images!</h3></center>
+    <hr width="100%" color="black"/>
+
+    <img src="{{ url_for('static',filename='images/list2.png') }}", width="100"
+        style="margin-left: auto; margin-right: auto; display: block;")/>
+
+    <ul>
+         {% for n in files %}
+         <li>{{n}}</li>
+         {% endfor %}
+    </ul>
+  </body>
+</html>
